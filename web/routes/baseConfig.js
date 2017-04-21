@@ -31,7 +31,7 @@ config.adviceWriter = {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // forced for now, other adapters are outdated since 0.4
-config.adapter = 'sqlite';
+config.adapter = 'mongodb';
 
 config.sqlite = {
   path: 'plugins/sqlite',
@@ -60,7 +60,7 @@ config.postgresql = {
 config.mongodb = {
   path: 'plugins/mongodb',
   version: 0.1,
-  connectionString: 'mongodb://mongodb/gekko', // connection to mongodb server
+  connectionString: 'mongodb://172.17.0.2/gekko', // connection to mongodb server
   dependencies: [{
     module: 'mongojs',
     version: '2.4.0'
